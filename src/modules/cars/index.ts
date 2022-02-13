@@ -1,3 +1,3 @@
-export * from './model'
+export * from './entities'
 export * from './repositories'
 export * from './services'

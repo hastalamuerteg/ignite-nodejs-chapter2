@@ -6,8 +6,8 @@ class ListCategoryController {
     this.listCaregoryUseCase = listCaregoryUseCase
   }
   
-  handle(req: Request, res: Response) {
-    const allCategories = this.listCaregoryUseCase.execute()
+  async handle(req: Request, res: Response) {
+    const allCategories = await this.listCaregoryUseCase.execute()
     res.status(200).json(allCategories)
   }
 }
